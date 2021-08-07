@@ -9,6 +9,10 @@ function Header() {
         src="https://pngimg.com/uploads/amazon/amazon_PNG25.png"
         alt=""
       />
+      <div className="header__deliverAddress">
+          <span className="deliverAddress__LineOne">Deliver to Mario</span>
+          <span className="deliverAddress__LineTwo">Minessota 85497</span>
+      </div>
       <div className="header__search">
         <input type="text" className="search__searchInput" />
         {/** logo */}

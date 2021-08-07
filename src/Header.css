@@ -1,0 +1,14 @@
+.header {
+    background-color: #131921;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.header__logo {
+    width: 110px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
