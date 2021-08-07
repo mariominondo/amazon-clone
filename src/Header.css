@@ -1,8 +1,12 @@
 .header {
     background-color: #131921;
+    width: 100%;
     color: #fff;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-size: 12px;
 }
 
 .header__logo {
@@ -12,3 +16,54 @@
     margin-left: 10px;
 }
 
+.header__deliverAddress {
+    margin-top: 10px;
+}
+
+.header__search {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 5px;
+}
+
+.search__searchInput {
+    width: 427px;
+    height: 40px;
+    border-radius: 6px 0px 0 6px ;
+    border-style: none;
+}
+
+.search__searchIcon {
+    background-color: #FEBD69;
+    color: rgb(70, 70, 70);
+    width: 45px !important;
+    height: 42px !important;
+    border-radius: 0 6px 6px 0 !important;  
+}
+
+.search__searchIcon:hover {
+    background-color: #F3A847;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+ .nav__signin, .nav__returnsAndOrders {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 113px;
+}
+
+.signin__LineTwo, .returnsAndOrders__LineTwo {
+    margin-top: -27px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.nav__shopping-cart {
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 14px;
+}

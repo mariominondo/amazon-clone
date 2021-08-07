@@ -1,5 +1,7 @@
 import React from "react";
 import "./Header.css";
+import SearchIcon from "@material-ui/icons/Search";
+import LocationOnIcon from "@material-ui/icons/LocationOn";
 
 function Header() {
   return (
@@ -10,12 +12,17 @@ function Header() {
         alt=""
       />
       <div className="header__deliverAddress">
-          <span className="deliverAddress__LineOne">Deliver to Mario</span>
-          <span className="deliverAddress__LineTwo">Minessota 85497</span>
+        <div>
+            <LocationOnIcon className="locationIcon"></LocationOnIcon>
+            <div>
+                <span className="deliverAddress__LineOne">Deliver to Mario</span>
+                <span className="deliverAddress__LineTwo">Minessota 85497</span>
+            </div>
+            </div>
       </div>
       <div className="header__search">
         <input type="text" className="search__searchInput" />
-        {/** logo */}
+        <SearchIcon fontSize="small" className="search__searchIcon" />
       </div>
       <nav className="nav">
         <div className="nav__signin">
@@ -26,7 +33,7 @@ function Header() {
             <span className="returnsAndOrders__LineOne">Returns</span>
             <span className="returnsAndOrders__LineTwo">&#38; Orders</span>
         </div>
-        <div className="nav__shopping-cart">{/** logo */}</div>
+        <div className="nav__shopping-cart">{/** logo */} Cart</div>
       </nav>
     </div>
   );
